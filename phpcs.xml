@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<ruleset name="Sosyallift AI Pro">
+    <description>Coding standards for Sosyallift AI Pro plugin</description>
+
+    <file>.</file>
+    
+    <exclude-pattern>/vendor/*</exclude-pattern>
+    <exclude-pattern>/node_modules/*</exclude-pattern>
+    <exclude-pattern>/assets/dist/*</exclude-pattern>
+    <exclude-pattern>/logs/*</exclude-pattern>
+    <exclude-pattern>/cache/*</exclude-pattern>
+    
+    <rule ref="WordPress">
+        <exclude name="WordPress.Files.FileName"/>
+        <exclude name="WordPress.NamingConventions.ValidVariableName"/>
+        <exclude name="WordPress.NamingConventions.ValidFunctionName"/>
+        <exclude name="WordPress.NamingConventions.ValidHookName"/>
+        <exclude name="Generic.Commenting.DocComment"/>
+        <exclude name="Squiz.Commenting.VariableComment"/>
+        <exclude name="Squiz.Commenting.FunctionComment"/>
+        <exclude name="Squiz.Commenting.ClassComment"/>
+    </rule>
+    
+    <rule ref="WordPress.Security.EscapeOutput">
+        <properties>
+            <property name="customEscapingFunctions" type="array">
+                <element value="esc_html"/>
+                <element value="esc_attr"/>
+                <element value="esc_url"/>
+                <element value="esc_js"/>
+                <element value="wp_kses_post"/>
+                <element value="wp_kses"/>
+            </property>
+        </properties>
+    </rule>
+    
+    <rule ref="WordPress.Security.NonceVerification"/>
+    <rule ref="WordPress.Security.ValidatedSanitizedInput"/>
+    <rule ref="WordPress.PHP.DisallowShortTernary"/>
+    
+    <rule ref="Generic.CodeAnalysis.UnusedFunctionParameter"/>
+    <rule ref="Generic.CodeAnalysis.UselessOverridingMethod"/>
+    <rule ref="Generic.Commenting.Todo"/>
+    
+    <rule ref="Squiz.PHP.DisallowSizeFunctionsInLoops"/>
+    <rule ref="Squiz.Strings.ConcatenationSpacing">
+        <properties>
+            <property name="spacing" value="1"/>
+        </properties>
+    </rule>
+    
+    <arg name="extensions" value="php"/>
+    <arg name="colors"/>
+    <arg name="warning-severity" value="0"/>
+    
+    <ini name="memory_limit" value="256M"/>
+</ruleset>
