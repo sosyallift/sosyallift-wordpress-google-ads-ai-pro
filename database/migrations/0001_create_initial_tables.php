@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 namespace SosyalliftAIPro\Database\Migrations;
 
 class Migration_0001_Create_Initial_Tables {

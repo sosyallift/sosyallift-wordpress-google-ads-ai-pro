@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 namespace SosyalliftAIPro\Database\Migrations;
 
 class Migration_0002_Add_SEO_And_Campaign_Tables {

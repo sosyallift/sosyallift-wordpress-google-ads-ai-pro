@@ -98,4 +98,4 @@
     $(document).ready(function() {
         SL_AI.init();
     });
-})(jQuery);
+})(jQuery);

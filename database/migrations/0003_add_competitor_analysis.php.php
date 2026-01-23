@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 namespace SosyalliftAIPro\Database\Migrations;
 
 class Migration_0003_Add_Competitor_Analysis {

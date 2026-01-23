@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 // Plugin konfigürasyon sabitleri
 return [
     // API ayarları
@@ -7,14 +7,12 @@ return [
         'timeout' => 30,
         'retry_attempts' => 3,
     ],
-    
     // Cache ayarları
     'cache' => [
         'enabled' => true,
         'default_ttl' => 300,
         'prefix' => 'sl_ai_pro_',
     ],
-    
     // Log ayarları
     'log' => [
         'enabled' => true,
@@ -22,21 +20,18 @@ return [
         'max_file_size' => 10485760, // 10MB
         'retention_days' => 30,
     ],
-    
     // Cron ayarları
     'cron' => [
         'sync_interval' => 300, // 5 dakika
         'cleanup_interval' => 86400, // 24 saat
         'reporting_interval' => 86400, // 24 saat
     ],
-    
     // UI ayarları
     'ui' => [
         'admin_menu_position' => 30,
         'admin_menu_icon' => 'dashicons-chart-area',
         'dashboard_widgets' => true,
     ],
-    
     // Feature flags
     'features' => [
         'google_ads' => true,
@@ -46,4 +41,4 @@ return [
         'predictive_analytics' => true,
         'automated_optimization' => false, // Beta
     ],
-];
+];

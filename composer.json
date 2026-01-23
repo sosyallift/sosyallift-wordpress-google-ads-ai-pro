@@ -1,1 +1,23 @@
-﻿
+{
+    "name": "sosyallift/sosyallift-ai-pro",
+    "description": "AI-Powered SEO & Ads Intelligence Platform for WordPress",
+    "type": "wordpress-plugin",
+    "license": "GPL-3.0+",
+    "authors": [
+        {
+            "name": "Sosyallift",
+            "email": "info@sosyallift.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "SosyalliftAIPro\\": "./"
+        }
+    },
+    "require": {
+        "php": ">=7.4",
+        "ext-curl": "*",
+        "ext-json": "*",
+        "ext-mbstring": "*"
+    }
+}
