@@ -1,0 +1,25 @@
+{
+  "name": "sosyallift/sosyallift-ai-pro",
+  "description": "AI-Powered SEO & Ads Intelligence Platform for WordPress",
+  "type": "wordpress-plugin",
+  "license": "GPL-3.0+",
+
+  "autoload": {
+    "psr-4": {
+      "SosyalliftAIPro\\Core\\": "core/",
+      "SosyalliftAIPro\\Modules\\": "modules/",
+      "SosyalliftAIPro\\Admin\\": "admin/",
+      "SosyalliftAIPro\\API\\": "api/",
+      "SosyalliftAIPro\\Database\\": "database/",
+      "SosyalliftAIPro\\CLI\\": "cli/",
+      "SosyalliftAIPro\\Includes\\": "includes/"
+    }
+  },
+
+  "require": {
+    "php": ">=7.4",
+    "ext-curl": "*",
+    "ext-json": "*",
+    "ext-mbstring": "*"
+  }
+}

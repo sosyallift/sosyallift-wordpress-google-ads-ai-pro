@@ -1,0 +1,40 @@
+﻿.sl-ai-card {
+    background: #fff;
+    padding: 16px;
+    margin-bottom: 16px;
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.1);
+}
+
+.sl-ai-score-bar {
+    background: #eee;
+    height: 12px;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.sl-ai-score-fill {
+    height: 100%;
+    width: 0;
+    background: linear-gradient(90deg,#4caf50,#f44336);
+    transition: width .4s;
+}
+
+.sl-ai-badge {
+    display: inline-block;
+    padding: 4px 8px;
+    margin-right: 6px;
+    border-radius: 4px;
+    font-size: 12px;
+    color: #fff;
+}
+
+.sl-ai-critical { background:#d32f2f; }
+.sl-ai-warning  { background:#f57c00; }
+.sl-ai-stable   { background:#388e3c; }
+.sl-ai-missed-opportunity { background:#7b1fa2; }
+.sl-ai-traffic-leak { background:#1976d2; }
+
+.sl-ai-action {
+    border-left: 4px solid #000;
+}

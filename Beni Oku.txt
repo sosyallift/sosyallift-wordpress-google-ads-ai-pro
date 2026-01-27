@@ -1,0 +1,4 @@
+wp-config.php veya plugin bootstrap içine eklenir:
+
+
+define('SOSYALLIFT_INTELLIGENCE_DRY_RUN', true);
